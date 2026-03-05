@@ -2353,7 +2353,7 @@
   .hero_component.footer {
     grid-column-gap: 44px;
     grid-row-gap: 44px;
-    min-height: 55em;
+    min-height: 58em;
   }
 
   .hero_component.modal {
@@ -2443,7 +2443,7 @@
   }
 
   .section-cards {
-    min-height: 80svh;
+    min-height: 60svh;
   }
 
   .img-wrap {
@@ -2855,7 +2855,7 @@
   }
 
   .section-cards {
-    min-height: 100svh;
+    min-height: 60svh;
   }
 
   .btn-wrap {
@@ -3095,7 +3095,7 @@
   }
 
   .hero_component.footer {
-    min-height: 50vh;
+    min-height: 30vh;
   }
 
   .hero_component.modal {
@@ -3113,12 +3113,8 @@
     margin-bottom: 40px;
   }
 
-  .hero_component.main {
-    min-height: 50vh;
-  }
-
-  .hero_component.sauna {
-    min-height: 70vh;
+  .hero_component.main, .hero_component.sauna {
+    min-height: 30vh;
   }
 
   .hero_component.home {
@@ -3126,7 +3122,7 @@
   }
 
   .hero_component.info-l, .hero_component.service {
-    min-height: 50vh;
+    min-height: 30vh;
   }
 
   .hero_component.terms-c, .hero_component.privace-c {
@@ -3239,7 +3235,7 @@
   }
 
   .section-cards {
-    min-height: 70svh;
+    min-height: 30svh;
   }
 
   .hero-right.flex {
