@@ -1,13 +1,13 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Mar 04 2026 18:38:00 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="698dfa94e4bc48f059775be6" data-wf-site="698dfa93e4bc48f059775b6e" lang="en-FI">
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Mar 05 2026 11:15:54 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="698dfa94e4bc48f059775be6" data-wf-site="698dfa93e4bc48f059775b6e" lang="fi-FI">
 <head>
   <meta charset="utf-8">
-  <title>Cleaning Services in Kotka &amp; Hamina | BEL</title>
+  <title>BEL Siivouspalvelut</title>
   <meta content="Puhtaampi koti – helpompi arki! Ammattitaitoiset siivouspalvelut koteihin ja yrityksille. Palvelemme: Kotka, Hamina, Karhula, Pyhtää sekä lähialueet." name="description">
-  <meta content="Cleaning Services in Kotka &amp; Hamina | BEL" property="og:title">
+  <meta content="BEL Siivouspalvelut" property="og:title">
   <meta content="Puhtaampi koti – helpompi arki! Ammattitaitoiset siivouspalvelut koteihin ja yrityksille. Palvelemme: Kotka, Hamina, Karhula, Pyhtää sekä lähialueet." property="og:description">
   <meta content="https://i.postimg.cc/66ycJSNN/bel-seo.png" property="og:image">
-  <meta content="Cleaning Services in Kotka &amp; Hamina | BEL" property="twitter:title">
+  <meta content="BEL Siivouspalvelut" property="twitter:title">
   <meta content="Puhtaampi koti – helpompi arki! Ammattitaitoiset siivouspalvelut koteihin ja yrityksille. Palvelemme: Kotka, Hamina, Karhula, Pyhtää sekä lähialueet." property="twitter:description">
   <meta content="https://i.postimg.cc/66ycJSNN/bel-seo.png" property="twitter:image">
   <meta property="og:type" content="website">
@@ -413,7 +413,7 @@ margin: 0rem !important;
 }
 </style>
     </div>
-    <div data-collapse="medium" data-animation="default" data-duration="400" fs-scrolldisable-element="smart-nav" data-easing="ease" data-easing2="ease" role="banner" class="navbar_component w-nav">
+    <div data-animation="default" class="navbar_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb46d" role="banner" data-duration="400">
       <div class="menu"></div>
       <div class="navbar_container">
         <div class="navbar_links">
@@ -422,7 +422,7 @@ margin: 0rem !important;
         </div>
         <nav role="navigation" class="navbar_menu is-page-height-tablet w-nav-menu">
           <div class="navbar_menu-links is-tablet">
-            <a href="#" class="button-link custom header w-inline-block">
+            <a href="index.html" aria-current="page" class="button-link custom header w-inline-block w--current">
               <div class="m-text-link color capitalize custom">Etusivu</div>
             </a>
             <a href="/#about" class="button-link custom header w-inline-block">
@@ -560,6 +560,15 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
           </div>
           <div class="nav-code w-embed w-script">
+            <style>
+body.menu-open .fs-recaptcha-badge,
+body.menu-open .grecaptcha-badge {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: none !important;
+}
+</style>
             <script>
 document.addEventListener('DOMContentLoaded', function() {
     const menuBtn = document.querySelector('.navbar_menu-button');
@@ -568,6 +577,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.button-link');
     if (menuBtn && mainWrapper && navMenu) {
         menuBtn.addEventListener('click', function() {
+            if (!menuBtn.classList.contains('w--open')) {
+                document.body.classList.add('menu-open');
+            } else {
+                document.body.classList.remove('menu-open');
+            }
             setTimeout(function() {
                 if (menuBtn.classList.contains('w--open')) {
                     mainWrapper.style.opacity = '0';
@@ -577,6 +591,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     mainWrapper.style.opacity = '1';
                     mainWrapper.style.pointerEvents = 'auto';
                     navMenu.classList.remove('is-page-height-tablet');
+                    document.body.classList.remove('menu-open');
                 }
             }, 50);
         });
@@ -587,6 +602,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 mainWrapper.style.opacity = '1';
                 mainWrapper.style.pointerEvents = 'auto';
                 navMenu.classList.remove('is-page-height-tablet');
+                document.body.classList.remove('menu-open');
                 if (menuBtn && menuBtn.classList.contains('w--open')) {
                     menuBtn.click();
                 }
@@ -612,7 +628,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="wrap-text">
                       <div data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb4a6" style="opacity:0" class="lavel-h">Puhtaampi koti — helpompi arki</div>
                       <h1 data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb4a8" style="opacity:0" class="h1-main">BEL Siivouspalvelut - Luotettavaa siivousta Kotka-Hamina alueella</h1>
-                      <p data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb4aa" style="opacity:0" class="paragraph-large inter-font white no-pad small">Haluatko helpompaa arkea, puhtaamman kodin tai huolettoman muuton? BEL Siivouspalvelut auttaa. Tarjoamme ystävällistä, ammattitaitoista ja joustavaa siivouspalvelua koteihin, yrityksille ja piha-alueille.</p>
+                      <p class="paragraph-large inter-font white no-pad small">Haluatko helpompaa arkea, puhtaamman kodin tai huolettoman muuton? BEL Siivouspalvelut auttaa. Tarjoamme ystävällistä, ammattitaitoista ja joustavaa siivouspalvelua koteihin, yrityksille ja piha-alueille.</p>
                       <div class="btn-wrap">
                         <a href="tel:+358(045)861-57-11" class="btn-phone w-inline-block"></a>
                         <a href="#multi-form" class="btn-contact w-inline-block">
@@ -883,7 +899,7 @@ document.addEventListener('DOMContentLoaded', function() {
               <div class="label-card">
                 <div class="label-icon"><img loading="lazy" src="images/icon-b-v6.svg" alt=""></div>
                 <div class="label-text">
-                  <p class="text-grid">Sohvien ja kalusteiden pesu  Pieni sohva: <span class="span-black">80-120 €</span>  Kulmasohva: <span class="span-black">120-180 €</span><br> Patja: <span class="span-black">60-140 €</span>   </p>
+                  <p class="text-grid">Sohvien ja kalusteiden pesu<br>  Pieni sohva: <span class="span-black">80-120 €</span>  Kulmasohva: <span class="span-black">120-180 €</span><br> Patja: <span class="span-black">60-140 €</span>   </p>
                 </div>
               </div>
             </div>
@@ -1010,7 +1026,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   <div class="hero-left-w"><img width="683" loading="lazy" alt="" src="images/bel-house.svg" class="bel-house"></div>
                   <div class="hero-right-w">
                     <div class="wrap-text">
-                      <h2 class="h2-capitalize_w">Miksi valita<br>BEL Siivouspalvelut</h2>
+                      <h2 class="h2-capitalize_w flex">Miksi valita<br>BEL Siivouspalvelut</h2>
                       <p class="paragraph-large inter-font white">Meidän tavoitteemme on tehdä sinun arjestasi helpompi.</p>
                       <div class="list-wrap">
                         <div class="list-service">
@@ -1058,21 +1074,21 @@ document.addEventListener('DOMContentLoaded', function() {
                   <div class="info-wrap-m">
                     <div class="info-w-m">
                       <h4 data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb6db" style="opacity:0" class="h4-info">Palvelualue:</h4>
-                      <div class="info-l-item location"><img loading="lazy" src="https://cdn.prod.website-files.com/697b2a664cc22737de0b6467/698cd1c875660637b51d83e7_info-local.svg" alt="">
+                      <div class="info-l-item location"><img loading="lazy" src="https://cdn.prod.website-files.com/697b2a664cc22737de0b6467/698cd1c875660637b51d83e7_info-local.svg" alt="location">
                         <p class="paragraph-large inter-font white no-pad small">Kotka – Hamina – Karhula  – Pyhtää – lähialueet</p>
                       </div>
                     </div>
                     <div class="info-flexbox">
                       <div class="info-w-m">
                         <h4 data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb6e3" style="opacity:0" class="h4-info">Yhteydenottotapa:</h4>
-                        <div class="info-l-item"><img loading="lazy" src="https://cdn.prod.website-files.com/697b2a664cc22737de0b6467/697cd56ad47e46f19d865d44_message.svg" alt="">
+                        <div class="info-l-item"><img loading="lazy" src="https://cdn.prod.website-files.com/697b2a664cc22737de0b6467/697cd56ad47e46f19d865d44_message.svg" alt="email">
                           <p class="paragraph-large inter-font white no-pad small">bel.siivous@gmail.com</p>
                         </div>
-                        <div class="info-l-item"><img loading="lazy" src="https://cdn.prod.website-files.com/697b2a664cc22737de0b6467/697cd56ad243989bb7e66c24_call.svg" alt="">
+                        <div class="info-l-item"><img loading="lazy" src="https://cdn.prod.website-files.com/697b2a664cc22737de0b6467/697cd56ad243989bb7e66c24_call.svg" alt="phone">
                           <p class="paragraph-large inter-font white no-pad small">+358 (045) 861-57-11</p>
                         </div>
                       </div>
-                      <div data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb6ed" style="opacity:0" class="info-g"><img loading="lazy" src="images/time.svg" alt="" class="img-info">
+                      <div data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb6ed" style="opacity:0" class="info-g"><img loading="lazy" src="images/time.svg" alt="time" class="img-info">
                         <div class="info-t">
                           <h4 class="h4-info">Aukioloajat:</h4>
                           <p class="paragraph-large inter-font white no-pad small">Maanantai – Lauantai: 08:00 – 18:00<br>Sunnuntai: Suljettu</p>
@@ -1109,7 +1125,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="cta_item-bottom-wrap"><img loading="lazy" src="images/photo-v3.svg" alt="" class="cta_profile">
                       <div class="cta_profile-name-wrap">
                         <div class="cta_item-profile-text">Joonas Heikkinen</div>
-                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt=""></div>
+                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt="stars"></div>
                       </div>
                     </div>
                   </div>
@@ -1120,7 +1136,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="cta_item-bottom-wrap"><img loading="lazy" src="images/photo-v4.svg" alt="" class="cta_profile">
                       <div class="cta_profile-name-wrap">
                         <div class="cta_item-profile-text">Tiina Mäkinen</div>
-                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt=""></div>
+                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt="stars"></div>
                       </div>
                     </div>
                   </div>
@@ -1131,18 +1147,18 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="cta_item-bottom-wrap"><img loading="lazy" src="images/photo-v5.svg" alt="person-photo-v5" class="cta_profile">
                       <div class="cta_profile-name-wrap">
                         <div class="cta_item-profile-text">Jenni Laaksonen</div>
-                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt=""></div>
+                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt="stars"></div>
                       </div>
                     </div>
                   </div>
                   <div class="cta_item-wrap">
-                    <div class="cta_item-top-wrap"><img loading="lazy" src="images/bel-t.svg" alt="" class="testimonial">
+                    <div class="cta_item-top-wrap"><img loading="lazy" src="images/bel-t.svg" alt="testomonial" class="testimonial">
                       <div class="cta_item-text">&quot;En olisi uskonut, että vanhoista lauteista saa vielä näin puhtaat! Saunan pesu oli todella perusteellinen, ja parasta oli se, ettei pesun jälkeen jäänyt mitään kemikaalien hajua – vain puhdas puun tuoksu. Nyt kelpaa taas saunoa. Kiitos!&quot;</div>
                     </div>
                     <div class="cta_item-bottom-wrap"><img loading="lazy" src="images/phoro-v1.svg" alt="person-photo-v1" class="cta_profile">
                       <div class="cta_profile-name-wrap">
                         <div class="cta_item-profile-text">Mika Virtanen</div>
-                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt=""></div>
+                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt="stars"></div>
                       </div>
                     </div>
                   </div>
@@ -1153,7 +1169,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="cta_item-bottom-wrap"><img loading="lazy" src="images/photo-v2.svg" alt="person-photo-v2" class="cta_profile">
                       <div class="cta_profile-name-wrap">
                         <div class="cta_item-profile-text">Leena Järvinen</div>
-                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt=""></div>
+                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt="stars"></div>
                       </div>
                     </div>
                   </div>
@@ -1164,7 +1180,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="cta_item-bottom-wrap"><img loading="lazy" src="images/photo-v6.svg" alt="" class="cta_profile">
                       <div class="cta_profile-name-wrap">
                         <div class="cta_item-profile-text">Antti Korhonen</div>
-                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt=""></div>
+                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt="stars"></div>
                       </div>
                     </div>
                   </div>
@@ -1175,7 +1191,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="cta_item-bottom-wrap"><img loading="lazy" src="images/photo-v7.svg" alt="" class="cta_profile">
                       <div class="cta_profile-name-wrap">
                         <div class="cta_item-profile-text">Sari Koskinen</div>
-                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt=""></div>
+                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt="stars"></div>
                       </div>
                     </div>
                   </div>
@@ -1186,7 +1202,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="cta_item-bottom-wrap"><img loading="lazy" src="images/photo-v8.svg" alt="" class="cta_profile">
                       <div class="cta_profile-name-wrap">
                         <div class="cta_item-profile-text">Marko Nieminen</div>
-                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt=""></div>
+                        <div class="cta_rate-wrap"><img loading="lazy" src="images/stars.svg" alt="stars"></div>
                       </div>
                     </div>
                   </div>
@@ -1261,12 +1277,12 @@ document.addEventListener('DOMContentLoaded', function() {
                       </div>
                     </div>
                     <div class="form-code w-embed w-script"><!--  Google ReCAPTCHA V3  -->
-                      <script src="https://www.google.com/recaptcha/api.js?render=6Lf7538sAAAAAL2AnrP3c-_TG1aGxy4qSqf5n-y4"></script>
+                      <script src="https://www.google.com/recaptcha/api.js?render=6Le8XXIsAAAAAIfnGLQDjXlKAjX1fDqTpO908Ly2"></script>
                       <script>
 document.addEventListener("DOMContentLoaded", function () {
   const formBlocks = document.querySelectorAll('[fs-recaptcha-element="form-block"]');
   const serverUrl = "https://hook.eu1.make.com/aeph26db3jan3dx3bmwhu6fy9k5nx89q";
-  const siteKey = "6Lf7538sAAAAAL2AnrP3c-_TG1aGxy4qSqf5n-y4";
+  const siteKey = "6Le8XXIsAAAAAIfnGLQDjXlKAjX1fDqTpO908Ly2";
   formBlocks.forEach((formBlock) => {
     const form = formBlock.querySelector("form");
     const successBlock = formBlock.querySelector('[fs-recaptcha-element="success"]');
@@ -1381,7 +1397,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
             </div>
             <div class="accordion-item">
-              <div id="q6" class="accordion-item-trigger">
+              <div id="q7" class="accordion-item-trigger">
                 <div class="icon accordion-icon"></div>
                 <h4 class="accordion-heading"><strong class="bold-2">Voinko perua tai siirtää siivouksen?</strong><br></h4>
               </div>
@@ -1390,7 +1406,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
             </div>
             <div class="accordion-item">
-              <div id="q6" class="accordion-item-trigger">
+              <div id="q8" class="accordion-item-trigger">
                 <div class="icon accordion-icon"></div>
                 <h4 class="accordion-heading"><strong class="bold-2">Paljonko siivous maksaa?</strong><br></h4>
               </div>
@@ -1399,7 +1415,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
             </div>
             <div class="accordion-item">
-              <div id="q6" class="accordion-item-trigger">
+              <div id="q9" class="accordion-item-trigger">
                 <div class="icon accordion-icon"></div>
                 <h4 class="accordion-heading"><strong class="bold-2">Millä alueella toimitte?</strong><br></h4>
               </div>
@@ -1408,7 +1424,7 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
             </div>
             <div class="accordion-item">
-              <div id="q6" class="accordion-item-trigger">
+              <div id="q10" class="accordion-item-trigger">
                 <div class="icon accordion-icon"></div>
                 <h4 class="accordion-heading"><strong class="bold-2">Miten voin varata siivouksen?</strong><br></h4>
               </div>
@@ -1433,7 +1449,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                     <div class="footer-link desktop">
                       <div class="footer-logo-wrap">
-                        <div class="footer-logo"><img src="" loading="lazy" alt="">
+                        <div class="footer-logo"><img src="images/logo-footer.svg" loading="lazy" alt="bel-logo-footer">
                           <h6 class="h6-logo">BEL Siivouspalvelut </h6>
                         </div>
                         <div class="footer-motto">
@@ -1505,7 +1521,7 @@ document.addEventListener('DOMContentLoaded', function() {
                           <h6 class="h6-footer">Pikalinkit</h6>
                           <div class="link-wrap">
                             <div class="link-footer">
-                              <a href="#" class="nav-link">Etusivu</a>
+                              <a href="index.html" aria-current="page" class="nav-link w--current">Etusivu</a>
                             </div>
                             <div class="link-footer">
                               <a href="/#about" class="nav-link">Meistä</a>
@@ -1527,14 +1543,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="footer-wrap">
                           <h6 class="h6-footer">Toimialue:</h6>
                           <div class="footer-info-wrap">
-                            <div class="location"><img width="21" src="images/location.svg" alt="" loading="lazy" class="footer-icon location">
+                            <div class="location"><img width="21" src="images/location.svg" alt="location" loading="lazy" class="footer-icon location">
                               <p class="paragraph-large inter-font white no-pad small grey">Kotka – Hamina – Karhula  – <br>Pyhtää – lähialueet</p>
                             </div>
-                            <div class="gmail"><img width="14" src="images/gmail.svg" alt="" loading="lazy" class="footer-icon">
+                            <div class="gmail"><img width="14" src="images/gmail.svg" alt="email" loading="lazy" class="footer-icon">
                               <p class="paragraph-large inter-font white no-pad small grey">bel.siivous@gmail.com</p>
                             </div>
                           </div>
-                          <div class="info-g"><img src="images/time-g.svg" loading="lazy" alt="" class="img-info">
+                          <div class="info-g"><img src="images/time-g.svg" loading="lazy" alt="time" class="img-info">
                             <div class="info-t">
                               <h4 class="h4-info">Aukioloajat:</h4>
                               <p class="paragraph-large inter-font white no-pad small grey">Maanantai – Lauantai: <br>08:00 – 18:00<br>Sunnuntai: Suljettu</p>
@@ -1545,7 +1561,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="footer-link mob">
                       <div class="footer-logo-wrap">
-                        <div class="footer-logo"><img src="" loading="lazy" alt="bel-logo-footer">
+                        <div class="footer-logo"><img src="images/logo-footer.svg" loading="lazy" alt="bel-logo-footer">
                           <h6 class="h6-logo">BEL Siivouspalvelut </h6>
                         </div>
                         <div class="footer-motto">
@@ -1563,7 +1579,7 @@ document.addEventListener('DOMContentLoaded', function() {
                           <h6 class="h6-footer">Pikalinkit</h6>
                           <div class="link-wrap">
                             <div class="link-footer">
-                              <a href="#" class="nav-link">Etusivu</a>
+                              <a href="index.html" aria-current="page" class="nav-link w--current">Etusivu</a>
                             </div>
                             <div class="link-footer">
                               <a href="/#about" class="nav-link">Meistä</a>
@@ -1587,14 +1603,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="footer-wrap-mob">
                       <h6 class="h6-footer">Toimialue:</h6>
                       <div class="footer-info-wrap">
-                        <div class="location"><img width="21" src="" alt="bel-location" loading="lazy" class="footer-icon location">
+                        <div class="location"><img width="21" src="images/location.svg" alt="bel-location" loading="lazy" class="footer-icon location">
                           <p class="paragraph-large inter-font white no-pad small grey">Kotka – Hamina – Karhula  – <br>Pyhtää – lähialueet</p>
                         </div>
-                        <div class="gmail"><img width="14" src="" alt="bel-email" loading="lazy" class="footer-icon">
+                        <div class="gmail"><img width="14" src="images/gmail.svg" alt="bel-email" loading="lazy" class="footer-icon">
                           <p class="paragraph-large inter-font white no-pad small grey">bel.siivous@gmail.com</p>
                         </div>
                       </div>
-                      <div class="info-g"><img src="" loading="lazy" alt="bel-data" class="img-info">
+                      <div class="info-g"><img src="images/time-g.svg" loading="lazy" alt="bel-data" class="img-info">
                         <div class="info-t">
                           <h4 class="h4-info">Aukioloajat:</h4>
                           <p class="paragraph-large inter-font white no-pad small grey">Maanantai – Lauantai: <br>08:00 – 18:00<br>Sunnuntai: Suljettu</p>
@@ -1606,11 +1622,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="copyright">© 2026 All Rights Reserved </div>
                     <div class="info-wrap-f">
                       <div class="text-link">
-                        <a href="#" class="p-link">Tietosuojaseloste</a>
+                        <a href="privacy.html" class="p-link">Tietosuojaseloste</a>
                       </div>
                       <div class="divider footer"></div>
                       <div class="text-link">
-                        <a href="#" class="t-link">Käyttöehdot</a>
+                        <a href="terms.html" class="t-link">Käyttöehdot</a>
                       </div>
                     </div>
                   </div>
