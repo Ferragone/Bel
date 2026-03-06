@@ -959,7 +959,7 @@
 }
 
 .page-wrapper.none {
-  display: none;
+  display: block;
 }
 
 .section-form {
@@ -3609,6 +3609,10 @@
     padding-bottom: 40px;
   }
 
+  .label-text {
+    align-self: auto;
+  }
+
   .nav-block {
     justify-content: center;
     align-items: center;
@@ -4053,6 +4057,10 @@
   .section-about.custom {
     padding-top: 100px;
     padding-bottom: 60px;
+  }
+
+  .span-black {
+    text-align: center;
   }
 
   .cta_main-wrap {
@@ -4798,8 +4806,8 @@
     margin-top: 0;
     margin-bottom: 20px;
     padding-top: 0;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .hero_component.sauna {
@@ -4908,8 +4916,8 @@
   .hero_content.custom.about {
     grid-column-gap: 0rem;
     grid-row-gap: 0rem;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .hero_content.custom.main-a {
