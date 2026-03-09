@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Mar 07 2026 18:03:57 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Mar 09 2026 11:10:14 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="698dfa94e4bc48f059775be6" data-wf-site="698dfa93e4bc48f059775b6e" lang="fi-FI">
 <head>
   <meta charset="utf-8">
@@ -517,7 +517,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
             </div>
           </div>
-          <a id="gotolab" href="contact.html" class="button-link custom cta-btn w-inline-block">
+          <a id="cta-contact" href="contact.html" class="button-link custom cta-btn w-inline-block">
             <div class="m-text-link color capitalize white custom">Ota yhteyttä</div>
           </a>
         </nav>
@@ -642,7 +642,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <section id="main" class="main-wrapper">
       <div class="section-hero home">
         <div data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb49d" style="opacity:0" class="img-wrap"></div>
-        <div class="bg-grid-absolute home"></div>
+        <div class="bg-grid-absolute home"><img class="bg-img-absolute" src="images/bg-main-m.webp" alt="bg-img-absolute" sizes="(max-width: 767px) 100vw, 768px" fetchpriority="high" srcset="images/bg-main-m-p-500.webp 500w, images/bg-main-m.webp 768w"></div>
         <div class="pad-section">
           <div class="padding-global">
             <div class="container-large hero">
@@ -1039,7 +1039,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
       </div>
       <div class="blue-line-s mob"></div>
-      <div class="green-line mob"></div>
+      <div class="green-line mob custom"></div>
       <section id="info" class="section-hero custom">
         <div class="bg-grid-absolute list"></div>
         <div class="pad-section">
@@ -1087,7 +1087,7 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </div>
       </section>
-      <div class="green-line mob"></div>
+      <div class="green-line mob custom"></div>
       <div class="section-count cursor-style">
         <div class="bg-grid-absolute contact"></div>
         <div class="pad-section">
@@ -1097,24 +1097,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="modal-wrap info">
                   <div class="info-wrap-m">
                     <div class="info-w-m">
-                      <h4 data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb6db" style="opacity:0" class="h4-info">Palvelualue:</h4>
+                      <h3 data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb6db" style="opacity:0" class="h3-info">Palvelualue:</h3>
                       <div class="info-l-item location"><img loading="lazy" src="https://cdn.prod.website-files.com/697b2a664cc22737de0b6467/698cd1c875660637b51d83e7_info-local.svg" alt="location">
                         <p class="paragraph-large inter-font white no-pad small">Kotka – Hamina – Karhula  – Pyhtää – lähialueet</p>
                       </div>
                     </div>
                     <div class="info-flexbox">
                       <div class="info-w-m">
-                        <h4 data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb6e3" style="opacity:0" class="h4-info">Yhteydenottotapa:</h4>
+                        <h3 data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb6e3" style="opacity:0" class="h3-info">Yhteydenottotapa:</h3>
                         <div class="info-l-item"><img loading="lazy" src="https://cdn.prod.website-files.com/697b2a664cc22737de0b6467/697cd56ad47e46f19d865d44_message.svg" alt="email">
-                          <p class="paragraph-large inter-font white no-pad small">bel.siivous@gmail.com</p>
+                          <p class="paragraph-large inter-font white no-pad small">
+                            <a href="mailto:bel.siivous@gmail.com" class="link-email">bel.siivous@gmail.com</a>
+                          </p>
                         </div>
                         <div class="info-l-item"><img loading="lazy" src="https://cdn.prod.website-files.com/697b2a664cc22737de0b6467/697cd56ad243989bb7e66c24_call.svg" alt="phone">
-                          <p class="paragraph-large inter-font white no-pad small">+358 (045) 861-57-11</p>
+                          <p class="paragraph-large inter-font white no-pad small">
+                            <a href="tel:+358(045)861-57-11" class="link-phone">+358 (045) 861-57-11</a>
+                          </p>
                         </div>
                       </div>
                       <div data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb6ed" style="opacity:0" class="info-g"><img loading="lazy" src="images/time.svg" alt="time" class="img-info">
                         <div class="info-t">
-                          <h4 class="h4-info">Aukioloajat:</h4>
+                          <h3 class="h3-info">Aukioloajat:</h3>
                           <p class="paragraph-large inter-font white no-pad small">Maanantai – Lauantai: 08:00 – 18:00<br>Sunnuntai: Suljettu</p>
                         </div>
                       </div>
@@ -1133,7 +1137,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
       <div class="green-line"></div>
       <section class="section-cards">
-        <div class="bg-grid-absolute cards"></div>
+        <div class="bg-grid-absolute cards mob"></div>
         <div class="padding-global-t padding-section-small">
           <div class="container-large-t">
             <div class="cta_main-wrap">
@@ -1238,7 +1242,8 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </div>
       </section>
-      <div class="blue-line"></div>
+      <div class="blue-line mob"></div>
+      <div class="green-line mob"></div>
       <div class="section-form custom">
         <div class="bg-grid-absolute form"></div>
         <div class="pad-section">
@@ -1368,7 +1373,8 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
       </div>
-      <div class="blue-line"></div>
+      <div class="green-line mob"></div>
+      <div class="blue-line mob"></div>
       <section id="faq" class="section-faq">
         <div class="content-wrapper slim w-container">
           <div class="header-center-box _75">
@@ -1468,7 +1474,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="w-layout-grid hero_content custom footer">
                   <div class="footer-main">
                     <div class="footer-heading">
-                      <h2 data-w-id="698be2b4-c68a-1af9-ea21-a0fa35ceb817" style="opacity:0" class="h2-capitalize_b white">Etsitkö hyvää siivouspalvelua? <br>Ota meihin yhteyttä!</h2>
+                      <h5 class="h5-footer white">Etsitkö hyvää siivouspalvelua? <br>Ota meihin yhteyttä!</h5>
                       <a href="tel:+358(045)861-57-11" class="btn-phone w-inline-block"></a>
                     </div>
                     <div class="footer-link desktop">
@@ -1571,7 +1577,9 @@ document.addEventListener('DOMContentLoaded', function() {
                               <p class="paragraph-large inter-font white no-pad small grey">Kotka – Hamina – Karhula  – <br>Pyhtää – lähialueet</p>
                             </div>
                             <div class="gmail"><img width="14" src="images/gmail.svg" alt="email" loading="lazy" class="footer-icon">
-                              <p class="paragraph-large inter-font white no-pad small grey">bel.siivous@gmail.com</p>
+                              <p class="paragraph-large inter-font white no-pad small grey">
+                                <a href="mailto:bel.siivous@gmail.com" class="link-email">bel.siivous@gmail.com</a>
+                              </p>
                             </div>
                           </div>
                           <div class="info-g"><img src="images/time-g.svg" loading="lazy" alt="time" class="img-info">
