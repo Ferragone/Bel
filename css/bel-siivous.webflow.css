@@ -4224,7 +4224,7 @@
   }
 
   .bg-grid-absolute.form.custom {
-    background-image: url('../images/tab.png');
+    background-image: url('../images/tab-crop.png');
     background-position: 50%;
     background-size: cover;
   }
@@ -5172,6 +5172,10 @@
     padding-right: 2%;
     position: absolute;
     inset: 0%;
+  }
+
+  .success-message {
+    width: auto;
   }
 
   .flex-row-outer {
